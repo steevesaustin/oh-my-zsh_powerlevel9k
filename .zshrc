@@ -68,7 +68,7 @@ export PATH="/usr/local/bin:$PATH"
 
 # Java Home
 #JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
-JAVA_HOME=`/usr/libexec/java_home`
+JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/
 CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
 # Go Home
