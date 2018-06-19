@@ -55,7 +55,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python vi-mode copydir  copyfile autojump zsh-autosuggestions)
+plugins=(jira git python vi-mode copydir  copyfile autojump zsh-autosuggestions)
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
@@ -198,7 +198,7 @@ POWERLEVEL9K_SSH_ICON="\uFCB4"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER="."
 POWERLEVEL9K_STATUS_CROSS=true
-POWERLEVEL9K_IP_INTERFACE=en3
+POWERLEVEL9K_IP_INTERFACE=eno1
 POWERLEVEL9K_IP_ICON="\uF6FF"
 
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{green}\uf061 "
