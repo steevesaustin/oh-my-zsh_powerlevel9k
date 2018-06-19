@@ -43,6 +43,13 @@ git clone https://github.com/steevesaustin/oh-my-zsh_powerlevel9k.git
 ```bash
 rm .zshrc && ln -s oh-my-zsh_powerlevel9k/.zshrc .
 ```
+* Install jarvis config
+```bash
+cd
+rm -Rf .vim .vimrc
+ln -s ./jarvis .vim
+ln -s ./jarvis/vimrc .vimrc
+```
 * Finally, source
 ```bash
 source .zshrc
