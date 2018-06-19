@@ -50,9 +50,9 @@ rm .zshrc && ln -s oh-my-zsh_powerlevel9k/.zshrc .
 * Install jarvis config
 ```bash
 cd
-rm -Rf .vim .vimrc
-ln -s ./oh-my-zsh_powerlevel9k/jarvis .vim
-ln -s ./oh-my-zsh_powerlevel9k/jarvis/vimrc .vimrc
+rm $HOME/jarvis/vimrc.local $HOME/.vimrc
+ln -s ./oh-my-zsh_powerlevel9k/.vimrc $HOME/.vimrc
+ln -s ./oh-my-zsh_powerlevel9k/vimrc.local $HOME/jarvis/vimrc.local
 ```
 * Finally, source
 ```bash
