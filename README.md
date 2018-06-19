@@ -15,6 +15,19 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ```bash
 brew install wget git cask thefuck
 ```
+* (OSX) Install Fonts
+```bash
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
+```
+* (OSX) Install Syntax Highlight
+```bash
+brew install zsh-syntax-highlighting
+```
+* (OSX) Install zsh-autosuggestion
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 * Clone
 ```bash
 cd
