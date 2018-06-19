@@ -24,6 +24,10 @@ brew cask install font-hack-nerd-font
 ```bash
 brew install zsh-syntax-highlighting
 ```
+* (OSX) install powerlevel9k
+```bash
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+```
 * (OSX) Install zsh-autosuggestion
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
