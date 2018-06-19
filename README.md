@@ -45,7 +45,7 @@ git clone https://github.com/steevesaustin/oh-my-zsh_powerlevel9k.git
 ```
 * Remove any zsh config and symlink to the git clone
 ```bash
-rm .zshrc && ln -s oh-my-zsh_powerlevel9k/.zshrc .
+rm $HOME/.zshrc && ln -s $HOME/oh-my-zsh_powerlevel9k/.zshrc $HOME/.zshrc
 ```
 * Install jarvis config
 ```bash
@@ -56,6 +56,6 @@ ln -s $HOME/oh-my-zsh_powerlevel9k/.vimrc $HOME/.vimrc
 ```
 * Finally, source
 ```bash
-source .zshrc
+source $HOME/.zshrc
 ```
 
