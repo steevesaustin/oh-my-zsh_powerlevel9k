@@ -67,8 +67,19 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:$PATH"
 
 # Java Home
+case `uname` in
+  Darwin)
+	JAVA_HOME=`/usr/libexec/java_home`
+  ;;
+  Linux)
+	JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre
+  ;;
+  *)
+	JAVA_HOME=
+  ;;
+esac
 #JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
-JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/
+
 CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
 # Go Home
@@ -145,7 +156,7 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=""
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon host ssh time user dir dir_writable todo vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history load ram swap disk_usage battery)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history load ram swap disk_usage battery ip)
 
 POWERLEVEL9K_OS_ICON_FOREGROUND='white'
 POWERLEVEL9K_OS_ICON_BACKGROUND='black'
