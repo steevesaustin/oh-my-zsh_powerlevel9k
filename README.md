@@ -28,6 +28,12 @@ brew install zsh-syntax-highlighting
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
+
+* (OSX) Install Jarvis VIM
+```bash
+curl -L https://raw.github.com/NextJump/jarvis/master/install.sh | sh
+```
+
 * Clone
 ```bash
 cd
@@ -41,3 +47,4 @@ rm .zshrc && ln -s oh-my-zsh_powerlevel9k/.zshrc .
 ```bash
 source .zshrc
 ```
+
