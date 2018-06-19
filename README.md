@@ -47,8 +47,8 @@ rm .zshrc && ln -s oh-my-zsh_powerlevel9k/.zshrc .
 ```bash
 cd
 rm -Rf .vim .vimrc
-ln -s ./jarvis .vim
-ln -s ./jarvis/vimrc .vimrc
+ln -s ./oh-my-zsh_powerlevel9k/jarvis .vim
+ln -s ./oh-my-zsh_powerlevel9k/jarvis/vimrc .vimrc
 ```
 * Finally, source
 ```bash
