@@ -55,7 +55,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(jira git python vi-mode copydir  copyfile autojump zsh-autosuggestions)
+plugins=(jira git python vi-mode copydir  copyfile autojump zsh-autosuggestions zsh-syntax-highlighting)
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
@@ -137,6 +137,7 @@ eval $(thefuck --alias)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias todo='todo.sh -d ~/.todo.cfg'
+alias ss='ssh sdeloustal@nagios-sysnet.ullink.lan'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
