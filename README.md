@@ -8,7 +8,7 @@ To install :
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-* (OSX) Install Oh-My-ZSH
+* Install Oh-My-ZSH
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
@@ -24,14 +24,21 @@ brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
 ```
 
-* (OSX) Install Syntax Highlight
+* Install Syntax Highlight
+*OSX*
 ```bash
 brew install zsh-syntax-highlighting
 ```
-on UBUNTU only, you have to create a symbolic link to zsh-syntax-highlight
+*DEBIAN*
 ```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+*UBUNTU*
+```bash
+apt-get install zsh-syntax-highlight
 ln -s /usr/share/zsh-syntax-highlighting /usr/local/share/
 ````
+
 
 * (OSX) install powerlevel9k
 ```bash
