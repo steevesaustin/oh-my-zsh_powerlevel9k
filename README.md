@@ -25,6 +25,7 @@ brew cask install font-hack-nerd-font
 ```
 
 * Install Syntax Highlight
+
 *OSX*
 ```bash
 brew install zsh-syntax-highlighting
